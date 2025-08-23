@@ -1,6 +1,10 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
+import { FaRegUser } from "react-icons/fa";
+
+
+
 
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', current: true },
@@ -17,7 +21,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
+      className="relative navbarColor after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
     >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
@@ -34,11 +38,13 @@ export default function Navbar() {
           {/* Logo + enlaces */}
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <img
+              <Link to="/">
+                <img
                 alt="Your Company"
                 src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
                 className="h-8 w-auto"
               />
+              </Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -71,15 +77,12 @@ export default function Navbar() {
             </button>
 
             {/* Dropdown perfil */}
-            <Menu as="div" className="relative ml-3">
+            <Menu as="div" className="relative ml-3  text-white">
               <MenuButton className="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
                 <span className="absolute -inset-1.5" />
                 <span className="sr-only">Open user menu</span>
-                <img
-                  alt="user"
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
-                  className="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10"
-                />
+                <FaRegUser />
+                <span className="ml-2 text-sm font-medium text-white">Perfil</span>
               </MenuButton>
 
               <MenuItems
