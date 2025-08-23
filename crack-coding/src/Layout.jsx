@@ -4,11 +4,13 @@ import Home from './views/Home';
 import Login from './views/Login';
 import NotFound from './views/NotFound';
 import Navbar from './components/Navbar';
+import injectContext from './js/store/appContext';
 
 const Layout = () => {
+    const basename=proces.env.BASENAME || '';
     return (
         <div>
-            <BrowserRouter>
+            <BrowserRouter basename={basename}>
                 <Navbar />
                 <Routes>
                     <Route path='/' element={<Home />} />
@@ -20,4 +22,4 @@ const Layout = () => {
     )
 }
 
-export default Layout
+export default injectContext(Layout);
