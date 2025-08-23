@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 import injectContext from './js/store/appContext';
 
 const Layout = () => {
-    const basename=proces.env.BASENAME || '';
+    const basename=process.env.BASENAME;
     return (
         <div>
             <BrowserRouter basename={basename}>
