@@ -10,3 +10,21 @@
 body{
   background-color: #121317;
 }
+
+.home-title{
+  display: flex;
+  justify-content: center;
+  color: #06c9ff;
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.inro-text{
+  display: flex;
+  justify-content: center;
+  color: #99A6B2;
+  font-size: 1.5rem;
+  padding: 10px;
+  
+}
