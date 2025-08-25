@@ -11,20 +11,74 @@ body{
   background-color: #121317;
 }
 
-.home-title{
+.text-center{
+   position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   display: flex;
+  flex-direction: column; 
   justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home-title{
   color: #06c9ff;
   font-size: 4rem;
   font-weight: bold;
   padding: 10px;
 }
 
-.inro-text{
-  display: flex;
-  justify-content: center;
+.intro-text{
   color: #99A6B2;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 10px;
   
+}
+
+
+.home-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+
+.btn-get-started{
+  background-color: #00C8FF;
+  display: flex;
+  align-items: center;   /* centra verticalmente ícono y texto */
+  justify-content: center; /* centra horizontalmente el contenido */
+  gap: 8px; /* espacio entre ícono y texto */
+  padding: 20px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  
+}
+
+.btn-get-started:hover{
+  background-color: #05b1e1;
+  transition: background-color 0.3s ease;
+}
+
+.btn-sign-up{
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #282C33;
+  display: flex;
+  align-items: center;   /* centra verticalmente ícono y texto */
+  justify-content: center; /* centra horizontalmente el contenido */
+  gap: 8px; /* espacio entre ícono y texto */
+  padding: 20px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.btn-sign-up:hover{
+  background-color: #333841;
+  transition: background-color 0.3s ease;
 }
