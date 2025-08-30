@@ -82,3 +82,22 @@ body{
   background-color: #333841;
   transition: background-color 0.3s ease;
 }
+
+.home-stats {
+  display: flex;
+  justify-content: center; /* centra los bloques */
+  gap: 40px; /* espacio entre bloques */
+  margin-top: 20px;
+  text-align: center; /* centra el texto dentro de cada bloque */
+}
+
+.home-stats .stat h1 {
+  font-size: 2.5rem;
+  color: #06c9ff; 
+  margin: 0;
+}
+
+.home-stats .stat p {
+  margin: 5px 0 0 0;
+  color: #99A6B2;
+}
