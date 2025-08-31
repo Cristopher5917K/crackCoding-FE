@@ -23,28 +23,58 @@ const Home = () => {
             <FaArrowRight />
           </button>
         </div>
+
         <div className='home-stats'>
           <div className='stat'>
-            <h1><b>500+</b></h1>
+            <h2><b>500+</b></h2>
             <p>Retos Disponibles</p>
           </div>
 
           <div className='stat'>
-            <h1><b>50K+</b></h1>
+            <h2><b>50K+</b></h2>
             <p>Desarrolladores Activos</p>
           </div>
 
           <div className='stat'>
-            <h1><b>200K+</b></h1>
+            <h2><b>200K+</b></h2>
             <p>Soluciones compartidas</p>
           </div>
 
           <div className='stat'>
-            <h1><b>15+</b></h1>
+            <h2><b>15+</b></h2>
             <p>Lenguajes Soportados</p>
           </div>
-
         </div>
+        {/* Vista del porque elegir nuesta palataforma */}
+
+        <div className='why-us'>
+          <h2>¿Por qué elegir nuestra palataforma?</h2>
+          <p>Diseñada por desarrolladores, para desarrolladores. Todo lo que necesitas para crecer profesionalmente.</p>
+        </div>
+
+        <div className='features'>
+            <div className='feature-challenge'>
+              {/* Aqui tiene que ir el icono */}
+              <h3>Retos de programacion</h3>
+              <p>Resuelve problemas algorítmicos de diferentes niveles de dificultad, desde principiante hasta experto.</p>
+            </div>
+            <div className='feature-helpAI'>
+              {/* Aqui tiene que ir el icono */}
+              <h3>Asistente IA</h3>
+              <p>Obtén ayuda personalizada y sugerencias inteligentes para mejorar tu código y técnicas.</p>
+            </div>
+            <div className='feature-rewards'>
+              {/* Aqui tiene que ir el icono */}
+              <h3>Sistema de Logros</h3>
+              <p>Gana puntos, sube de nivel y desbloquea insignias mientras progresas en tu aprendizaje</p>
+            </div>
+            <div className='feature-community'>
+              {/* Aqui tiene que ir el icono */}
+              <h3>Comunidad Activa</h3>
+              <p>Comparte soluciones, aprende de otros desarrolladores y participa en competencias.</p>
+            </div>
+        </div>
+
 
       </div>
     </>

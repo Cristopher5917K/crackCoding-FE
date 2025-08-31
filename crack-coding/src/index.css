@@ -12,8 +12,8 @@ body{
 }
 
 .text-center{
-   position: absolute;
-  top: 35%;
+  position: absolute;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -91,8 +91,8 @@ body{
   text-align: center; /* centra el texto dentro de cada bloque */
 }
 
-.home-stats .stat h1 {
-  font-size: 2.5rem;
+.home-stats .stat h2 {
+  font-size: 2rem;
   color: #06c9ff; 
   margin: 0;
 }
@@ -100,4 +100,19 @@ body{
 .home-stats .stat p {
   margin: 5px 0 0 0;
   color: #99A6B2;
+}
+
+.why-us h2{
+  margin-top: 50px;
+  padding: 5px;
+  color: #F8FAFC;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.why-us p{
+  color: #99A6B2;
+  font-size: 1rem;
+  padding: 10px;
+  text-align: center;
 }
