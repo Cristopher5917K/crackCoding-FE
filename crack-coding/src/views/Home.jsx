@@ -2,6 +2,10 @@ import React from 'react'
 import '../index.css'
 import { IoPlayOutline } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa6";
+import { LuBrain } from "react-icons/lu";
+import { FiUsers } from "react-icons/fi"; 
+import { CiTrophy } from "react-icons/ci";
+import { GoCode } from "react-icons/go";
 
 const Home = () => {
   return (
@@ -54,22 +58,22 @@ const Home = () => {
 
         <div className='features'>
             <div className='feature-challenge'>
-              {/* Aqui tiene que ir el icono */}
+              <GoCode  className='challenge-icon'/>
               <h3>Retos de programacion</h3>
               <p>Resuelve problemas algorítmicos de diferentes niveles de dificultad, desde principiante hasta experto.</p>
             </div>
             <div className='feature-helpAI'>
-              {/* Aqui tiene que ir el icono */}
+              <LuBrain className='helpAI-icon' />
               <h3>Asistente IA</h3>
               <p>Obtén ayuda personalizada y sugerencias inteligentes para mejorar tu código y técnicas.</p>
             </div>
             <div className='feature-rewards'>
-              {/* Aqui tiene que ir el icono */}
+              <CiTrophy  className='rewards-icon'/>
               <h3>Sistema de Logros</h3>
               <p>Gana puntos, sube de nivel y desbloquea insignias mientras progresas en tu aprendizaje</p>
             </div>
             <div className='feature-community'>
-              {/* Aqui tiene que ir el icono */}
+              <FiUsers className='community-icon' />
               <h3>Comunidad Activa</h3>
               <p>Comparte soluciones, aprende de otros desarrolladores y participa en competencias.</p>
             </div>
