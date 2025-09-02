@@ -78,7 +78,25 @@ const Home = () => {
               <p>Comparte soluciones, aprende de otros desarrolladores y participa en competencias.</p>
             </div>
         </div>
+      <div>
+        {/* A este div le falta hacer el mapeo */}
+      </div>
+      <div className='ready-challenge'>
+        <div className='ready-text'>
+          <h1>¿Listo para el desafio?</h1>
+          <p>Únete a miles de desarrolladores que ya están mejorando sus habilidades con nosotros.</p>
+        </div>
+        <div className='ready-buttons'>
+          <button className='btn-get-started-challenge'>
+            Comenzar Gratis
+          </button>
+          
+          <button className='btn-learn-more'>
+            Explorar retos
+          </button>
+        </div>
 
+      </div>
 
       </div>
     </>
