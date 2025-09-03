@@ -1,5 +1,5 @@
 import React from 'react'
-import '../index.css'
+import '../syles/index.css'
 import { IoPlayOutline } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa6";
 import { LuBrain } from "react-icons/lu";

@@ -1,0 +1,22 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+
+    
+}
+
+.back-home{
+    color: #99A6B2;
+}
+.back-home a{
+  display: flex;
+  align-items: center; /* centra la flecha con el texto verticalmente */
+  gap: 8px; /* espacio entre la flecha y el texto */
+  text-decoration: none; /* opcional: quitar subrayado */
+  
+}
+

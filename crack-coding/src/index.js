@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import '../src/syles/index.css';
 import Layout from './Layout';
 import reportWebVitals from './reportWebVitals';
 
