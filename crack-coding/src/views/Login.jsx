@@ -1,8 +1,9 @@
 import React from 'react'
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import '../syles/login.css'
+import {useContext, useState} from 'react-router-dom';
 // import { Context } from '../js/store/appContext.js';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
 
     // const { store, actions } = useContext(Context)
@@ -21,7 +22,6 @@ const Login = () => {
     // const handleRegister = () => {
     //     const { name, email, password } = formData;
     //     actions.register(name, email, password);
-    //   }; 
 
     return (
         <div className='login-container'>
@@ -32,9 +32,14 @@ const Login = () => {
 
                 </a>
             </div>
-            <div>
+            <div className='login-form'>
+                <div className='welcome-login'>
+                    <h1>Bienvenido</h1>
+                    
+                    <p>Inicia seción para Comenzar</p>
+                </div>
                 <h2>Login</h2>
-                <h3>Test store: {store.personas}</h3>
+                {/* <h3>Test store: {store.personas}</h3> */}
                 <form>
                     <div>
                         <label htmlFor="name">Nombre:</label>
@@ -42,8 +47,8 @@ const Login = () => {
                             type="text"
                             id="name"
                             name="name"
-                            value={formData.name}
-                            onChange={handleChange}
+                            // value={formData.name}
+                            // onChange={handleChange}
                         />
                     </div>
                     <div>
@@ -52,8 +57,8 @@ const Login = () => {
                             type="email"
                             id="email"
                             name="email"
-                            value={formData.email}
-                            onChange={handleChange}
+                            // value={formData.email}
+                            // onChange={handleChange}
                         />
                     </div>
                     <div>
@@ -62,12 +67,12 @@ const Login = () => {
                             type="password"
                             id="password"
                             name="password"
-                            value={formData.password}
-                            onChange={handleChange}
+                            // value={formData.password}
+                            // onChange={handleChange}
                         />
                     </div>
                 </form>
-                <button onClick={handleRegister}>Register</button>
+                {/* <button onClick={handleRegister}>Register</button> */}
             </div>
 
         </div>
