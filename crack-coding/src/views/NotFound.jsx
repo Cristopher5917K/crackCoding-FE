@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "../syles/not-found.css"
 
 const NotFound = () => {
   return (
